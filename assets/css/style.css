@@ -39,6 +39,7 @@
   }
   .wrapper {
     max-width: var(--container-main-width);
+    border-bottom: 1px solid #c5c5c5;
   }
   .header-menu {
     display: flex;
@@ -46,7 +47,7 @@
     min-height: 95px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #c5c5c5;
+    
   }
 .menu__right {
   display: flex;
@@ -58,7 +59,11 @@ gap: 40px;
 align-items: center;
 justify-content: space-between;
 flex-wrap: wrap;
-
+}
+.header-border {
+  border: 1px solid #c5c5c5;
+  margin-bottom: 100px;
+  
 }
   .header-navbar__item {
     font-weight: 400;
@@ -72,12 +77,10 @@ flex-wrap: wrap;
     min-width: 118px;
     min-height: 45px;
     font-weight: 600;
-font-size: 16px;
-line-height: 45px;
-color: #000000;
-cursor: pointer;
-
-
+    font-size: 16px;
+    line-height: 45px;
+    color: #000000;
+    cursor: pointer;
   }
   .btn--light {
     background-color: #ffffff;
@@ -87,4 +90,61 @@ cursor: pointer;
   .btn--accent {
     background-color: #FF6336;
     color: #ffffff;
+  }
+  .header-main__content {
+    max-width: 610px;
+  }
+  .content--caption {
+    font-weight: 600;
+    font-size: var(--fs-xlg);
+    line-height: 70px;
+    color: var(--black);
+    margin-bottom: 50px;
+  }
+  .content--title {
+    font-weight: 400;
+    font-size: var(--fs-md);
+    line-height: 35px;
+    color: var(--black);
+    margin-bottom: 35px;
+  }
+  .content--actions {
+    margin-bottom: 25px;
+  }
+  .content--desciption {
+    font-weight: 400;
+    font-size: var(--fs-sm);
+    line-height: 25px;
+    color: var(--black);
+  }
+  
+  .header-main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 145px;
+  }
+  .section-background {
+    background-color: var(--deep-orange-300);
+    min-height: 455px;
+  }
+  .brands {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  .brands__title {
+    text-align: center;
+    margin-top: 98px;
+    font-weight: 600;
+font-size: var(--fs-lg);
+line-height: 60px;
+color: var(--black);
+margin-bottom: 70px;
+
+  }
+  .brands__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 102px;
   }
