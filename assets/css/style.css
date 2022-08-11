@@ -43,7 +43,6 @@ ul {
 }
 .header-menu {
   display: flex;
-  padding: 0 50px;
   min-height: 95px;
   align-items: center;
   justify-content: space-between;
