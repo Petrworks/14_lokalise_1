@@ -34,6 +34,11 @@ body {
 a {
   text-decoration: none;
   color: #000000;
+  transition: 0.5s;
+}
+a:hover {
+  font-size: calc(var(--fs-sm) * 1.2);
+  color: var(--deep-orange-300);
 }
 ul {
   list-style: none;
@@ -46,6 +51,8 @@ img {
   padding: 0 15px;
   width: 100%;
   margin: 0 auto;
+}
+.header {
 }
 .header-menu {
   display: flex;
@@ -120,7 +127,7 @@ img {
   line-height: 25px;
   color: var(--black);
 }
-.main {
+.main-block {
   display: flex;
   align-items: center;
   margin-bottom: 145px;
