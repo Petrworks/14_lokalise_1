@@ -53,9 +53,9 @@ img {
   margin: 0 auto;
 }
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
   background-color: var(--white);
 }
