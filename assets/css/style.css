@@ -161,6 +161,25 @@ img {
   line-height: 25px;
   color: var(--black);
 }
+@media (max-width: 992px) {
+  .content--caption {
+    font-weight: 600;
+    font-size: var(--fs-lg);
+  }
+  .content--title {
+    font-weight: 400;
+    font-size: var(--fs-md);
+    line-height: 35px;
+    color: var(--black);
+    margin-bottom: 35px;
+    max-width: 472px;
+  }
+}
+@media (max-width: 576px) {
+  .main-block {
+    flex-direction: column;
+  }
+}
 .main-block {
   display: flex;
   align-items: center;
@@ -187,35 +206,33 @@ img {
 }
 .brands__list {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 102px;
 }
-.section-content {
-  display: flex;
-  gap: 250px;
-  flex-direction: column;
-  margin-bottom: 150px;
-}
 @media (max-width: 992px) {
-  .content--caption {
+  .brands__title {
     font-weight: 600;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-blg);
+    line-height: 60px;
   }
-  .content--title {
-    font-weight: 400;
-    font-size: var(--fs-md);
-    line-height: 35px;
-    color: var(--black);
-    margin-bottom: 35px;
-    max-width: 472px;
+  .brands__list {
+    justify-content: center;
+    gap: 40px;
   }
 }
 @media (max-width: 576px) {
-  .main-block {
-    flex-direction: column;
+  .brands__title {
+    font-size: var(--fs-slg);
+  }
+  .brands__list {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
+
 .article {
   display: flex;
   flex-wrap: wrap;
@@ -244,14 +261,69 @@ img {
   line-height: 30px;
   color: var(--black);
 }
+@media (max-width: 992px) {
+  .article__title {
+    margin: auto;
+  }
+  .description__img {
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .title--heading {
+    font-size: var(--fs-slg);
+  }
+}
 .article-secondary__title {
   order: 1;
+}
+@media (max-width: 992px) {
+  .article-secondary__title {
+    margin: auto;
+    order: 0;
+  }
+  .description__img {
+    margin: auto;
+  }
+}
+@media (max-width: 576px) {
+  .title--heading {
+    font-size: var(--fs-slg);
+  }
 }
 .article-third__title {
   order: 0;
 }
+@media (max-width: 992px) {
+  .article-third__title {
+    margin: auto;
+  }
+  .description__img {
+    margin: auto;
+  }
+}
+@media (max-width: 576px) {
+  .article-third__title {
+    font-size: var(--fs-slg);
+  }
+}
 .article-forth__title {
   order: 1;
+}
+@media (max-width: 992px) {
+  .article-forth__title {
+    margin: auto;
+    order: 0;
+  }
+  .description__img {
+    margin: auto;
+  }
+}
+@media (max-width: 576px) {
+  .article-forth__title {
+    font-size: var(--fs-slg);
+  }
 }
 .section-secondary {
   background-color: var(--beige);
@@ -308,6 +380,19 @@ img {
   text-align: start;
   max-width: 403px;
 }
+@media (max-width: 992px) {
+  .list-cards {
+    justify-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .list-title {
+    font-size: var(--fs-slg);
+  }
+  .seventh__article {
+    min-height: 525px;
+  }
+}
 .section-forth {
   background-color: var(--blue-100);
   min-height: 468px;
@@ -336,6 +421,21 @@ img {
 .forth_logo {
   width: 113px;
 }
+@media (max-width: 992px) {
+  .forth_txt {
+    font-size: var(--fs-md);
+  }
+}
+@media (max-width: 576px) {
+  .forth__article {
+    flex-direction: column;
+    align-items: center;
+  }
+  .forth_img {
+    padding-top: 30px;
+    width: 240px;
+  }
+}
 .section-fifth {
   background-color: var(--brown-100);
 }
@@ -347,6 +447,10 @@ img {
   align-items: center;
 }
 .fifth__article-left {
+  display: flex;
+  gap: 64px;
+}
+.fifth__article-right {
   display: flex;
   gap: 64px;
 }
@@ -365,6 +469,25 @@ img {
 .fifth_border {
   border-left: 1px solid var(--black);
   height: 168px;
+}
+@media (max-width: 992px) {
+  .fifth__article {
+    justify-content: center;
+  }
+  .fifth--img {
+    width: 177px;
+  }
+  .fifth_border {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .fifth__article-left {
+    flex-direction: column;
+  }
+  .fifth__article {
+    gap: 25px;
+  }
 }
 .sixth__article {
   margin-top: 169px;
@@ -395,8 +518,11 @@ img {
   max-height: 60px;
   margin-bottom: 165px;
 }
-.seventh-sixth {
-  background-color: var(--deep-orange-300);
+@media (max-width: 576px) {
+  .sixth__title {
+    font-size: var(--fs-slg);
+    font-weight: 600;
+  }
 }
 .seventh__article {
   min-height: 600px;
@@ -430,6 +556,16 @@ img {
   line-height: 60px;
   padding: 0px 40px;
 }
+@media (max-width: 576px) {
+  .seventh__title {
+    font-weight: 600;
+    font-size: var(--fs-slg);
+  }
+  .seventh__article {
+    min-height: 500px;
+  }
+}
+
 .footer {
   background-color: #eeeeee;
   padding-top: 95px;
