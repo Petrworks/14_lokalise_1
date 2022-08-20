@@ -627,6 +627,16 @@ img {
   line-height: 15px;
   color: var(--fs-sm);
 }
+@media (max-width: 1260px) {
+  .footer-main {
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .footer__navbar {
+    flex-direction: column;
+  }
+}
 .footer__copyright {
   margin-top: 40px;
   display: flex;
@@ -647,4 +657,11 @@ img {
 .copyright__right {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 576px) {
+  .footer__copyright {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 }
