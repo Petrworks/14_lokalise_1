@@ -239,6 +239,9 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+.article-padding {
+  padding-bottom: 250px;
+}
 .title--heading {
   min-width: 485px;
   font-weight: 600;
@@ -362,6 +365,9 @@ img {
 .card_link {
   cursor: pointer;
   text-decoration: underline;
+}
+.section-secondary {
+  margin-top: 150px;
 }
 .secondary-card__txt {
   font-weight: 400;
@@ -489,6 +495,7 @@ img {
     gap: 25px;
   }
 }
+
 .sixth__article {
   margin-top: 169px;
   display: flex;
@@ -524,12 +531,14 @@ img {
     font-weight: 600;
   }
 }
+.seventh-sixth {
+  background-color: var(--deep-orange-300);
+}
 .seventh__article {
   min-height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--deep-orange-300);
 }
 .seventh__title {
   margin-top: 110px;
