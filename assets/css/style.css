@@ -210,7 +210,8 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 102px;
+  gap: 100px;
+  padding-bottom: 20px;
 }
 @media (max-width: 992px) {
   .brands__title {
@@ -244,7 +245,7 @@ img {
   padding-bottom: 250px;
 }
 .title--heading {
-  min-width: 485px;
+  max-width: 485px;
   font-weight: 600;
   font-size: var(--fs-lg);
   line-height: 60px;
@@ -280,6 +281,9 @@ img {
 @media (max-width: 576px) {
   .title--heading {
     font-size: var(--fs-slg);
+  }
+  .brands__list {
+    padding-bottom: 25px;
   }
 }
 .article-secondary__title {
